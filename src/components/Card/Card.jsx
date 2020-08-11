@@ -14,7 +14,7 @@ const Card = (props) => {
     languagesList = ""
   } else {
     languagesList = languages.map( (language) =>
-      <button name={language} onClick={handleClick} key={contLanguages = contLanguages + 1} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 text-teal-600 font-bold mr-2 text-xs'>
+      <button value={language} onClick={handleClick} key={contLanguages = contLanguages + 1} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 text-teal-600 font-bold mr-2 text-xs'>
         {language}
       </button>
     );
@@ -24,7 +24,7 @@ const Card = (props) => {
     toolsList = ""
   } else {
     toolsList = tools.map( (tool) =>
-      <button name={tool} onClick={handleClick} key={contTools = contTools + 1} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 text-teal-600 font-bold mr-2 text-xs'>
+      <button value={tool} onClick={handleClick} key={contTools = contTools + 1} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 text-teal-600 font-bold mr-2 text-xs'>
         {tool}
       </button>
     );
@@ -33,7 +33,8 @@ const Card = (props) => {
   return (
 
     <div>
-      {featured === true ? <div className='feature relative pl-5 pb-5 ml-3 mr-3 mt-6 mb-10 h-auto lg:w-4/5s bg-white border border-gray-100 rounded-lg md:flex items-center lg:mx-32 lg:my-4 shadow-xl'>
+      
+      {featured === true ? <div className='feature relative pl-5 pb-5 ml-3 mr-3 mt-6 mb-10 lg:mb-8 h-auto lg:w-4/5s bg-white border border-gray-100 rounded-lg md:flex items-center lg:mx-32 lg:my-4 shadow-xl'>
         <figure className='absolute md:static'>
           {/* <img className='w-16 lg:w-24 md:mt-4 mx-6' src='../../img/Apple.png' alt={company} /> */}
           {/* <img className='w-16 lg:w-24 md:mt-4 mx-6' src={require(logo)} alt={company} /> */}
@@ -61,15 +62,15 @@ const Card = (props) => {
           </article>
           <article className='mt-4 md:flex items-center'>
             <ul className='mb-3 flex'>
-              <button name={role} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{role}</button>
-              <button name={level} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{level}</button>
+              <button value={role} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{role}</button>
+              <button value={level} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{level}</button>
             </ul>
             <ul className='mb-3 flex'>{languagesList}</ul>
             <ul className='mb-3 flex'>{toolsList}</ul>
           </article>
         </section>
       </div> : 
-      <div className='relative pl-5 pb-5 ml-3 mr-3 mt-6 mb-10 h-auto lg:w-4/5s bg-white border border-gray-100 rounded-lg md:flex items-center lg:mx-32 lg:my-4 shadow-xl'>
+      <div className='relative pl-5 pb-5 ml-3 mr-3 mt-6 mb-10 lg:mb-8 h-auto lg:w-4/5s bg-white border border-gray-100 rounded-lg md:flex items-center lg:mx-32 lg:my-4 shadow-xl'>
         <figure className='absolute md:static'>
           {/* <img className='w-16 lg:w-24 md:mt-4 mx-6' src='../../img/Apple.png' alt={company} /> */}
           {/* <img className='w-16 lg:w-24 md:mt-4 mx-6' src={require(logo)} alt={company} /> */}
@@ -97,17 +98,15 @@ const Card = (props) => {
           </article>
           <article className='mt-4 md:flex items-center'>
             <ul className='mb-3 flex'>
-              <button name={role} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{role}</button>
-              <button name={level} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{level}</button>
+              <button value={role} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{role}</button>
+              <button value={level} onClick={handleClick} className='hover:bg-teal-600 hover:text-white bg-blue-100 rounded-lg p-2 mr-2 text-teal-600 font-bold text-xs'>{level}</button>
             </ul>
             <ul className='mb-3 flex'>{languagesList}</ul>
             <ul className='mb-3 flex'>{toolsList}</ul>
           </article>
         </section>
       </div>}
-      
     </div>
-
   )
 }
 

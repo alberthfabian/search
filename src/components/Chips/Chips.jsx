@@ -1,27 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useName } from '../../Context/Name';
 import './chips.scss';
 
 
 const Chips = (props) => {
 
-  const [tags, setTags] = useState(props.tags);
-  const { addAll } = useName();
-
-
-	const removeTags = indexToRemove => {
-    setTags([...tags.filter((_, index) => index !== indexToRemove )]);
-    tags.splice(indexToRemove, 1);
-    addAll(tags)
-  };
-  
-  const addTags = (event) => {
-    if (event.target.value !== "") {
-      setTags([...tags, event.target.value]);
-      addAll([...tags, event.target.value])
-      event.target.value = ""; 
-    }
-  };
+  const { tags, removeTags, addTags } = useName();
 
   return (
       <div className="tags-input">

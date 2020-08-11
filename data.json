@@ -2,6 +2,8 @@
   "jobs": [
     {
       "id": 1,
+      "count": 0,
+      "data": ["", "", "Frontend", "", "Senior", "", "HTML", "CSS", "JavaScript", "", "", "", "", "", "", ""],
       "company": "Photosnap",
       "logo": "../../img/photosnap.svg",
       "new": true,
@@ -17,6 +19,8 @@
     },
     {
       "id": 2,
+      "count": 0,
+      "data": ["", "Fullstack", "", "", "", "Midweight", "", "", "", "Python", "", "React", "", "", "", ""],
       "company": "Manage",
       "logo": "../../img/manage.svg",
       "new": true,
@@ -32,6 +36,8 @@
     },
     {
       "id": 3,
+      "count": 0,
+      "data": ["", "", "Frontend", "Junior", "", "", "", "", "JavaScript", "", "", "React", "Sass", "", "", ""],
       "company": "Account",
       "logo": "../../img/account.svg",
       "new": true,
@@ -47,6 +53,8 @@
     },
     {
       "id": 4,
+      "count": 0,
+      "data": ["", "", "Frontend", "Junior", "", "", "", "CSS", "JavaScript", "", "", "", "", "", "", ""],
       "company": "MyHome",
       "logo": "../../img/myhome.svg",
       "new": false,
@@ -62,12 +70,14 @@
     },
     {
       "id": 5,
+      "count": 0,
+      "data": ["", "Fullstack", "", "", "", "Midweight", "", "", "JavaScript", "", "Ruby", "", "Sass", "", "", ""],
       "company": "Loop Studios",
       "logo": "../../img/loop-studios.svg",
       "new": false,
       "featured": false,
       "position": "Software Engineer",
-      "role": "FullStack",
+      "role": "Fullstack",
       "level": "Midweight",
       "postedAt": "1w ago",
       "contract": "Full Time",
@@ -77,6 +87,8 @@
     },
     {
       "id": 6,
+      "count": 0,
+      "data": ["Backend", "", "", "Junior", "", "", "", "", "", "", "", "", "", "RoR", "", ""],
       "company": "Facelt",
       "logo": "../../img/faceit.svg",
       "new": false,
@@ -92,6 +104,8 @@
     },
     {
       "id": 7,
+      "count": 0,
+      "data": ["", "", "Frontend", "Junior", "", "", "HTML", "", "JavaScript", "", "", "", "Sass", "", "", ""],
       "company": "Shortly",
       "logo": "../../img/shortly.svg",
       "new": false,
@@ -107,6 +121,8 @@
     },
     {
       "id": 8,
+      "count": 0,
+      "data": ["", "", "Frontend", "Junior", "", "", "", "", "JavaScript", "", "", "", "Sass", "", "Vue", ""],
       "company": "Insure",
       "logo": "../../img/insure.svg",
       "new": false,
@@ -122,6 +138,8 @@
     },
     {
       "id": 9,
+      "count": 0,
+      "data": ["", "Fullstack", "", "", "", "Midweight", "", "", "JavaScript", "Python", "", "", "", "", "", "Django"],
       "company": "Eyecam Co.",
       "logo": "../../img/eyecam-co.svg",
       "new": false,
@@ -137,6 +155,8 @@
     },
     {
       "id": 10,
+      "count": 0,
+      "data": ["", "", "Frontend", "Junior", "", "", "", "", "JavaScript", "", "", "React", "Sass", "", "", ""],
       "company": "The Air Filter Company",
       "logo": "../../img/the-air-filter-company.svg",
       "new": false,
